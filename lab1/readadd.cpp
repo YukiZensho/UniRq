@@ -1,11 +1,12 @@
 #include <iostream>
 #include <fstream>
+#include <stdlib.h>
 using namespace std;
 
 ifstream fin("dummy");
-int a;
+int a,s;
 int main(){
-	fin>>a;
-	cout<<a;
-
+	while(fin>>a)
+		s+=a;
+	printf("%i",s);
 }
