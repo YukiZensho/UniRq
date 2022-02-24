@@ -2,9 +2,8 @@
 #include <stdio.h>
 
 int mystoi(char c[100]){
-	int a=0,i=0;
-	do	a=a*10+c[i]-48;
-	while(c[++i]);
+	int a=0,i=-1;
+	while(c[++i]>=48)	a=a*10+c[i]-48;
 	return a;
 }
 int main(){
