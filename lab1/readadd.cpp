@@ -8,5 +8,5 @@ int a,s;
 int main(){
 	while(fin>>a)
 		s+=a;
-	printf("%i",s);
+	printf("%i is the result",s);
 }
