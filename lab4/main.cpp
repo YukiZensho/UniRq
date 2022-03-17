@@ -4,6 +4,8 @@ using namespace std;
 
 int main(){
     cout<<"TEST\n";
-    sort s(5,10,100);
+    //sort s(5,10,100);
+	int a[100]={15,4,2,4};
+	sort s(4,a);
     s.print();
 }
