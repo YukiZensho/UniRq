@@ -1,21 +1,19 @@
-#ifndef	CANVAS
-#define	CANVAS
-#include <math.h>
-
-class canvas{
-	int x[100][100],height,width;
+#ifndef	SORT
+#define	SORT
+#include <stdlib.h>
+#include <stdio.h>
+class sort{
+	int e[100],q;
 	public:
-		canvas(int width,int height){
-			this->width=width;
-			this->height=height;
-		}
-	void DrawCircle(int x, int y, int ray, char ch){
-		for(int i=0;i<width;i++)
-			for(int j=0;j<height;j++)
-				if(sqrt((this->x[i][j]-x)*(this->x[i][j]-x)+(this->x[i][j]-y)*(this->x[i][j]-y))==ray)
-					this->x[i][j]=ch;
+	sort(int q, int l, int h){
+		this->q = q;
+		while(q--)	this->e[q]=rand()%(h-l)+l;
 	}
-	
+	void print(){
+		for(int i=0;i<this->q;i++)
+			printf("%i ",e[i]);
+	}
+
 };
 
 #endif
